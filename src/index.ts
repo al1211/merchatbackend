@@ -1,12 +1,14 @@
 import express from "express"
-import { router } from "./routes/userRoutes.ts";
+import {  usersrouter } from "./routes/userRoutes.ts";
+import { merchatntsrouter } from "./routes/merchantRoutes.ts";
 
 const app=express();
 
 
 app.use(express.json());
 
-app.use("/api/v1/user",router);
+app.use("/api/v1/user",usersrouter);
+app.use("/api/v1/user",merchatntsrouter);
 
 
 

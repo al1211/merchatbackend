@@ -25,7 +25,17 @@ merchantRouter.post("/singup",async(req:Request,res:Response)=>{
 })
 
 merchantRouter.post("/singin",async(req:Request,res:Response)=>{
+  try{
 
+    const {userName,password}=req.body;
+    if(!userName || password){
+        return res.status(401).json({
+          message:"Enter valid input"
+        })
+    }
+  }catch(err){
+
+  }
 })
 
-export const router=merchantRouter;
+export const merchatntsrouter=merchantRouter;

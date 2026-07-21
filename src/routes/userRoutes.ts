@@ -22,10 +22,10 @@ userRouter.post("/singup",async(req:Request,res:Response)=>{
         message:"Internal server error"
     })
   }
-})
+});
 
 userRouter.post("/singin",async(req:Request,res:Response)=>{
 
 })
 
-export const router=userRouter;
+export const usersrouter=userRouter;

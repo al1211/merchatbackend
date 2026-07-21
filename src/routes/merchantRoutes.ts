@@ -32,7 +32,8 @@ merchantRouter.post("/singin",async(req:Request,res:Response)=>{
         return res.status(401).json({
           message:"Enter valid input"
         })
-    }
+    };
+    
   }catch(err){
 
   }
